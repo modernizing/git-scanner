@@ -1,8 +1,24 @@
 [package]
 name = "git-scanner"
 version = "0.1.0"
-authors = ["Phodal Huang <h@phodal.com>"]
 edition = "2018"
+authors = ["Korny Sietsma <korny@sietsma.com>", "Phodal HUANG<h@phodal.com>"]
+description = "Git Scanner for code analaysis"
+categories = ["text-processing", "command-line-interface", "development-tools"]
+exclude = [
+  ".coco/*",
+  "benchmark/*",
+  "fixtures/*",
+  "targets/*",
+  ".github/*",
+  ".gitattributes",
+  ".adr.json",
+]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/inherd/git-scanner"
+documentation = "https://github.com/inherd/git-scanner"
+homepage = "https://github.com/inherd/git-scanner"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
