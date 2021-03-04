@@ -1,5 +1,5 @@
 [package]
-name = "git-scanner"
+name = "git_scanner"
 version = "0.1.0"
 edition = "2018"
 authors = ["Korny Sietsma <korny@sietsma.com>", "Phodal HUANG<h@phodal.com>"]
@@ -23,3 +23,28 @@ homepage = "https://github.com/inherd/git-scanner"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+regex = "1"
+failure = "0.1.8"
+
+chrono = "0.4"
+
+serde = { version = "1.0.114",features = ["derive","rc"] }
+erased-serde = "0.3"
+serde_json = "1.0"
+
+git2 = "0.8.0"
+
+indicatif = "0.13.0"
+
+derive_builder = "0.8.0"
+derive-getters = "0.1.0"
+
+log = "0.4"
+
+lazy_static = "1.4.0"
+
+[dev-dependencies]
+test_shared = { path = "test_shared" }
+tempfile = "3.1.0"
+zip = "0.5.3"
+pretty_assertions = "0.6.1"

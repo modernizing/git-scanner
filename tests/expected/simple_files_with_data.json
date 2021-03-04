@@ -1,0 +1,24 @@
+{
+  "name": "<root>",
+  "children": [
+    {
+      "name": "child",
+      "children": [
+        {
+          "name": "a.txt",
+          "data": {
+            "foo": "bar",
+            "filename": "./tests/data/simple/child/a.txt"
+          }
+        }
+      ]
+    },
+    {
+      "name": "parent.clj",
+      "data": {
+        "foo": "bar",
+        "filename": "./tests/data/simple/parent.clj"
+      }
+    }
+  ]
+}

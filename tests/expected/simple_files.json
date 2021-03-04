@@ -1,0 +1,16 @@
+{
+  "name": "<root>",
+  "children": [
+    {
+      "name": "child",
+      "children": [
+        {
+          "name": "a.txt"
+        }
+      ]
+    },
+    {
+      "name": "parent.clj"
+    }
+  ]
+}
