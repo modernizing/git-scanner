@@ -11,7 +11,6 @@ extern crate derive_getters;
 
 use crate::git::GitCalculator;
 use crate::git_logger::GitLogConfig;
-use crate::toxicity_indicator_calculator::ToxicityIndicatorCalculator;
 
 pub mod git_file_history;
 pub mod git_logger;
