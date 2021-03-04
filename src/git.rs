@@ -5,7 +5,7 @@
 use crate::git_file_history::{FileHistoryEntry, FileHistoryEntryBuilder, GitFileHistory};
 use crate::git_logger::{CommitChange, GitLog, GitLogConfig, User};
 use crate::git_user_dictionary::GitUserDictionary;
-use crate::toxicity_indicator_calculator::ToxicityIndicatorCalculator;
+use crate::indicator_calculator::IndicatorCalculator;
 use chrono::{NaiveDate, NaiveDateTime, NaiveTime};
 use failure::Error;
 use git2::Status;
@@ -266,7 +266,7 @@ impl GitCalculator {
     }
 }
 
-impl ToxicityIndicatorCalculator for GitCalculator {
+impl IndicatorCalculator for GitCalculator {
     fn name(&self) -> String {
         "git".to_string()
     }
