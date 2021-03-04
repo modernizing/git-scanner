@@ -4,7 +4,12 @@ based on [Polyglot Code Scanner](https://github.com/kornysietsma/polyglot-code-s
 
  - keep git logic only.
  - publish to crates.io
+
+todo:
+
  - [ ] add git clone.
+ - [ ] add history.
+ - [ ] merge cmd from coco.
 
 ## License
 
