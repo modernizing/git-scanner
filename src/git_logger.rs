@@ -39,8 +39,9 @@ impl GitLogConfig {
         config
     }
     /// filter log by number of years before now
-    pub fn since_years(self, years: u64) -> GitLogConfig {
-        let years_ago = SystemTime::now() - Duration::from_secs(60 * 60 * 24 * 365 * years);
+    pub fn since_years(self, years: f64) -> GitLogConfig {
+        let secs: f64 = (60 * 60 * 24 * 365) as f64 * years;
+        let years_ago = SystemTime::now() - Duration::from_secs(secs as u64);
         let years_ago_secs = years_ago
             .duration_since(SystemTime::UNIX_EPOCH)
             .unwrap()
