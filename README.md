@@ -10,9 +10,15 @@ based on [Polyglot Code Scanner](https://github.com/kornysietsma/polyglot-code-s
  - keep git logic only.
  - publish to crates.io
 
+todo:
+
+ - [ ] add git clone.
+ - [ ] add history.
+ - [ ] merge cmd from coco.
+
 examples:
 
-```
+```rust
 use git_scanner::flare::FlareTreeNode;
 use git_scanner::git::GitCalculator;
 use git_scanner::git_logger::GitLogConfig;
@@ -39,15 +45,6 @@ pub fn by_path(root: PathBuf) -> FlareTreeNode {
     return tree;
 }
 ```
-
-
-todo:
-
- - [ ] add git clone.
- - [ ] add history.
- - [ ] merge cmd from coco.
-
-
 
 Copyright 2019 Kornelis Sietsma
 
